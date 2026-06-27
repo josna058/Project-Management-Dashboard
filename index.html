@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Project Management Dashboard</h1>
+
+    <input type="text" id="projectName" placeholder="Project Name">
+
+    <input type="text" id="managerName" placeholder="Manager Name">
+
+    <select id="status">
+        <option value="">Select Status</option>
+        <option>Pending</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+    </select>
+
+    <button onclick="addProject()">
+        Add Project
+    </button>
+
+    <table border="1">
+
+        <thead>
+
+            <tr>
+
+                <th>Project</th>
+                <th>Manager</th>
+                <th>Status</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="projectTable">
+
+        </tbody>
+
+    </table>
+
+    <h2>Total Projects :
+        <span id="totalProjects">0</span>
+    </h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
